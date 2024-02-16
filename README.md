@@ -1,38 +1,40 @@
 # 42sh
 
-This project consists in creating a zsh-like in C language considered UNIX (and POSIX) standard.
+Welcome to 42sh - a Unix shell implemented in C, designed to mimic the functionality of the tcsh shell. This project is part of the B2 level of the Unix System and Programming course at PSU.
 
-# Usage
-```
-make re
-./42sh
-```
+## Project Details
+- Project Name: 42sh
+- Binary Name: 42sh
+- Language: C
+- Compilation: Via Makefile, including re, clean, and fclean rules
 
-# Features
----
-- [x] Builtins
-	- [x] cd [directory]
-	- [x] echo [str...]
-	- [x] exit [n]
-	- [x] env
-	- [x] setenv [name] [value]
-	- [x] unsetenv
-	- [x] unset [-fv] name...
-	- [x] history
-	- [x] ![n | str]
-- [x] Execution
-	- [x] Execution of commands with their parameters and PATH management.
-	- [x] Management of errors and the return value of commands.
-	- [x] The following redirects: ">", "<<", ">>", "<".
-	- [x] Pipes “|”.
-	- [x] The logical operators "&&" and "||".
-	- [x] The ";" separator.
-- [x] Signals
-	- [x] ctrl+D
-	- [x] ctrl+C
-- [x] Bonuses
-	- [x] The "<<" heredoc.
-	- [x] Colours.
-	- [x] Variables.
-	- [x] Aliases.
-	- [x] History.
+## Builtins
+- cd [directory]
+- echo [str...]
+- exit [n]
+- env
+- setenv [name] [value]
+- unsetenv
+- unset [-fv] name...
+- history
+- ![n | str]
+
+## Features
+- Execution of commands with their parameters and PATH management.
+- Management of errors and the return value of commands.
+- The following redirects: ">", "<<", ">>", "<".
+- Pipes “|”.
+- The logical operators "&&" and "||".
+- The ";" separator.
+- ctrl+D
+- ctrl+C
+
+## Bonuses
+- The "<<" heredoc.
+- Colours.
+- Variables.
+- Aliases.
+- History.
+
+## Usage
+The program must be compiled with the provided Makefile or use CMake. Make sure to include all necessary source files, excluding unnecessary files like binaries, temporary files, or object files. After compiling the program can be executed using `./42sh` with no extra arguments.
